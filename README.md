@@ -4,7 +4,7 @@ Rearwing meant to be an OpenSource API agnostic (OpenGL/Vulkan) data oriented re
 
 -- Features
 - binary shader loading and generation
-- fonts shaders and generation
+- fonts loading and generation
 - Vulkan/OpenGL abstraction for resources loading and management
 - OpenGL ES backends
 - Simple and efficient, based on static polymorphism 
