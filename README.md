@@ -8,6 +8,7 @@ Rearwing meant to be an OpenSource API agnostic (OpenGL/Vulkan) data oriented re
 - Vulkan/OpenGL abstraction for resources loading and management
 - OpenGL ES backends
 - Simple and efficient, based on static polymorphism 
+- Unique pointer based (one node can only have one owner - its parent) scenegraph abstraction (Camera/Scene/Node/Text)
 
 -- Backends
 - OpenGL - ready
