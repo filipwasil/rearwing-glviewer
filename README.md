@@ -1,6 +1,6 @@
 # Rearwing - GL viewer
 
-Rearwing meant to be an OpenSource API agnostic (OpenGL/Vulkan) data oriented rendering engine with shallow framework layer.
+Rearwing meant to be an OpenSource API agnostic (OpenGL/Vulkan) data oriented rendering engine with shallow framework layer.Its still far away from its main goal, but there are few ideas and features already worth checking out.
 
 -- Features
 - binary shader loading and generation
