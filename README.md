@@ -1,9 +1,6 @@
-# Rearwing - Safe rendering engine
+# Rearwing - GL viewer
 
-Rearwing meant to be an OpenSource API agnostic (OpenGL/Vulkan) Data oriented rendering Engine.
-
-- OpenGL part - ready
-- Vulkan part - todo
+Rearwing meant to be an OpenSource API agnostic (OpenGL/Vulkan) data oriented rendering engine with shallow framework layer.
 
 -- Features
 - binary shader loading and generation
@@ -11,6 +8,11 @@ Rearwing meant to be an OpenSource API agnostic (OpenGL/Vulkan) Data oriented re
 - Vulkan/OpenGL abstraction for resources loading and management
 - OpenGL ES backends
 - Simple and efficient, based on static polymorphism 
+
+-- Backends
+- OpenGL - ready
+- OpenGl ES - ready
+- Vulkan - todo
 
 -- External tools and libraries:
 - TinyObjLoader
