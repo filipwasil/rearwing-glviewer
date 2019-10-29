@@ -1,0 +1,55 @@
+@startuml
+
+class Moveable {
+  +vec3 position
+  +quat rotation
+  +vec3 scale
+  +mat4 transformation
+  +mat4 parentTransformation
+  +quat parentRotation
+}
+
+abstract class Node3D {
+  +onDraw()
+  +onEvent(EventType)
+}
+
+abstract class Scene {
+  +onDraw()
+  +onEvent(EventType)
+  +onRendererUpdate(Renderer& renderer)
+}
+
+class RenderPass {
+  +updateRenderer(Renderer&) = 0
+}
+
+class Camera {
+
+}
+
+enum EventType {
+  time
+  translate
+  rotate
+  scale
+  key
+  mouse
+  touch
+}
+
+enum RenderPassType {
+  default
+}
+
+Node3D *-- "many" Node3D
+Node3D "1" *-- "1" RenderItem
+Scene *-- "many" Node3D
+Scene *-- "1" Renderer
+Scene *-- "1" Camera
+Renderer *-- "many" RenderPass
+Renderer *-- "many" RenderItem
+Engine *-- "1" Scene
+Node3D <|-- Moveable
+
+@enduml

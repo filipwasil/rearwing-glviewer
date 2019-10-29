@@ -1,0 +1,13 @@
+image: rikorose/gcc-cmake:gcc-8
+
+pipelines:
+  default:
+    - step:
+        name: build
+        size: 2x
+        script:
+          - apt-get update && apt-get install -y libglfw3-dev libassimp-dev libglm-dev libgles2-mesa-dev libfreetype6-dev git python3-dev ninja-build
+          - git submodule init && git submodule update
+          - mkdir build && cd build && cmake -DSANITIZE_ADDRESS=On .. -G Ninja
+          - ninja
+          - ninja test

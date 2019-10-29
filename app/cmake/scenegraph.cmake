@@ -1,0 +1,1 @@
+set(REAR_SCENEGRAPH_INCLUDE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/components/scenegraph/inc)
