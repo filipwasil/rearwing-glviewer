@@ -76,6 +76,7 @@ find_package(Sanitizers)
 
 target_link_libraries(app
     Threads::Threads
+        fmt
     glfw
     scenegraph
     factories

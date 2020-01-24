@@ -62,8 +62,7 @@ void Context::initWindow(GLFWmonitor** monitors, const ContextConfig& cfg)
     }
   } else
   {
-    mResolution[0] = cfg.mScreenWidth;
-    mResolution[1] = cfg.mScreenHeight;
+    mResolution = {static_cast<float>(cfg.mScreenWidth), static_cast<float>(cfg.mScreenHeight)};
     mWindow = glfwCreateWindow(cfg.mScreenWidth, cfg.mScreenHeight, cfg.mScreenName, nullptr, nullptr);
   }
 

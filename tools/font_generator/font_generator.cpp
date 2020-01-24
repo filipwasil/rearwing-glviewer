@@ -55,7 +55,7 @@ int FontGenerator::generate(const char* ttfFilePath, const char* outputPNG, cons
 	// load a font face from a file
 	FT_Face face;
 	if (FT_New_Face (ft, ttfFilePath, 0, &face)) {
-		fprintf(stderr, "Could not open .ttf file\n");
+		fprintf(stderr, "Could not open .ttf file %s\n", ttfFilePath);
 		return 1;
 	}
 	std::cout << ttfFilePath << " font found\n";

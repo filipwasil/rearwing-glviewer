@@ -29,8 +29,6 @@ GLPreview::GLPreview()
         double x{0.0};
         double y{0.0};
         glfwGetCursorPos(window, &x, &y);
-//        const auto normalizedXPosition = x / static_cast<double>(ptr->getResolution()[0]);
-//        const auto normalizedYPosition = y / static_cast<double>(ptr->getResolution()[1]);
       }
     }});
 
